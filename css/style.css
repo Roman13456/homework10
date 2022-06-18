@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+.slider{
+    /* max-width: 1000px; margin: auto; width: 100%; */
+    width: 300px;
+    overflow: hidden;
+    height: 100%;
+    margin: auto;
+    /* display: flex; */
+    
+}
+.slider .imgContainer{
+    
+    display: flex;
+    /* flex-basis: 300px; */
+    transition: all 0.3s;
+}
+.slider img{
+    /* display: none; */
+    object-fit: contain;
+    max-width: 300px;
+    width: 100%;
+    height: 300px; 
+    
+}
+.slider img.visible{
+    display: block;
+    margin: auto;
+}
+.visibleBtn{
+    display: block;
+}
