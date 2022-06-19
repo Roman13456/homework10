@@ -4,15 +4,15 @@
 // При натисканні на Next - показуємо наступне зображення
 // При натисканні на Prev - попереднє
 // При досягненні останнього зображення – ховати кнопку Next. Аналогічно з першим зображенням та кнопкою
+let imgArray = document.querySelectorAll(".slider img");
+const prevBtn = document.querySelector(".prevBtn");
+const nextBtn = document.querySelector(".nextBtn");
+let imgArrayLength = imgArray.length;
+const imgContainer = document.querySelector(".imgContainer");
+const slider = document.querySelector(".slider");
+let counter = 0;
+let shift = 0;
 window.onload = function () {
-  let imgArray = document.querySelectorAll(".slider img");
-  const prevBtn = document.querySelector(".prevBtn");
-  const nextBtn = document.querySelector(".nextBtn");
-  let imgArrayLength = imgArray.length;
-  const imgContainer = document.querySelector(".imgContainer");
-  const slider = document.querySelector(".slider");
-  let counter = 0;
-  let shift = 0;
   function sliderWidth() {
     let ImgWidth = imgArray[counter].width;
     slider.style = `width:${ImgWidth}px`;
@@ -58,7 +58,7 @@ window.onload = function () {
   // }
   // calcImgContainerWidth()
   // const calcImgContainerWidth = 300*imgArrayLength
-  
+
   nextBtn.addEventListener("click", function () {
     shift -= imgArray[counter].width;
     console.log(shift);
