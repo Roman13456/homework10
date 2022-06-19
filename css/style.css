@@ -1,6 +1,10 @@
 body{
     overflow-x: hidden;
+    margin:0
 }
+/* .central_container{
+    max-width: 1200px;margin: auto;
+} */
 .slider{
     overflow: hidden;
     /* max-width: 1000px; margin: auto; width: 100%; */
