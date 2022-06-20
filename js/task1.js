@@ -4,10 +4,10 @@
 // При натисканні на Next - показуємо наступне зображення
 // При натисканні на Prev - попереднє
 // При досягненні останнього зображення – ховати кнопку Next. Аналогічно з першим зображенням та кнопкою
-let imgArray = document.querySelectorAll(".slider img");
+const imgArray = document.querySelectorAll(".slider img");
 const prevBtn = document.querySelector(".prevBtn");
 const nextBtn = document.querySelector(".nextBtn");
-let imgArrayLength = imgArray.length;
+const imgArrayLength = imgArray.length;
 const imgContainer = document.querySelector(".imgContainer");
 const slider = document.querySelector(".slider");
 let counter = 0;
